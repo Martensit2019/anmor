@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Психолог в Ярославле — Анна Морозова | Очные и онлайн-консультации</title>
+  <meta name="description" content="Психолог в Ярославле. Индивидуальные консультации очно и онлайн: тревога, самооценка, отношения, эмоциональное выгорание. Запись на консультацию." />
+  <meta name="keywords" content="психолог Ярославль, психологическая консультация Ярославль, психолог онлайн, помощь психолога" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Психолог в Ярославле — Анна Морозова" />
+  <meta property="og:description" content="Индивидуальные консультации очно в Ярославле и онлайн. Бережная поддержка и понятный путь к изменениям." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="theme-color" content="#f5f2ed" />
+  <style>
+    :root {
+      --bg: #f6f3ee;
+      --surface: #fffdf9;
+      --surface-2: #ece7df;
+      --text: #27302e;
+      --muted: #6f7774;
+      --accent: #647a70;
+      --accent-dark: #4d6259;
+      --line: #ddd6cd;
+      --shadow: 0 18px 50px rgba(53, 61, 57, 0.08);
+      --radius: 28px;
+      --radius-sm: 18px;
+      --max: 1160px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+    button, input, textarea { font: inherit; }
+
+    .wrap { width: min(var(--max), calc(100% - 40px)); margin: 0 auto; }
+    .section { padding: 92px 0; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+      background: rgba(255,255,255,.48);
+      letter-spacing: .02em;
+    }
+    h1, h2, h3 { margin: 0; line-height: 1.08; font-weight: 600; letter-spacing: -0.03em; }
+    h1 { font-size: clamp(46px, 7vw, 84px); max-width: 900px; }
+    h2 { font-size: clamp(34px, 4.8vw, 58px); max-width: 760px; }
+    h3 { font-size: 24px; }
+    p { margin: 0; }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(14px);
+      background: rgba(246,243,238,.82);
+      border-bottom: 1px solid rgba(221,214,205,.72);
+    }
+    .nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { text-decoration: none; font-weight: 700; letter-spacing: -0.02em; }
+    .nav-links { display: flex; gap: 26px; align-items: center; }
+    .nav-links a { text-decoration: none; font-size: 14px; color: var(--muted); }
+    .nav-links a:hover { color: var(--text); }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 50px;
+      padding: 0 22px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      cursor: pointer;
+      transition: .2s ease;
+      font-weight: 600;
+    }
+    .btn-primary { background: var(--accent); color: white; }
+    .btn-primary:hover { background: var(--accent-dark); transform: translateY(-1px); }
+    .btn-secondary { border-color: var(--line); background: rgba(255,255,255,.45); }
+    .btn-secondary:hover { background: white; }
+
+    .hero { padding: 58px 0 78px; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.22fr .78fr;
+      gap: 42px;
+      align-items: end;
+    }
+    .hero-copy { padding: 28px 0 16px; }
+    .hero-copy .eyebrow { margin-bottom: 28px; }
+    .hero-copy p {
+      max-width: 690px;
+      margin-top: 28px;
+      font-size: 19px;
+      color: var(--muted);
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
+    .hero-meta { display: flex; gap: 24px; flex-wrap: wrap; margin-top: 34px; color: var(--muted); font-size: 14px; }
+
+    .portrait {
+      min-height: 570px;
+      border-radius: 40px;
+      background:
+        radial-gradient(circle at 60% 20%, rgba(255,255,255,.9) 0 18%, transparent 19%),
+        linear-gradient(160deg, #d9ddd6, #b8c2ba 60%, #8ca097);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .portrait::before {
+      content: "";
+      position: absolute;
+      width: 58%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #f6e6d8;
+      top: 14%;
+      left: 21%;
+      box-shadow: 0 0 0 24px rgba(255,255,255,.22);
+    }
+    .portrait::after {
+      content: "Фото психолога";
+      position: absolute;
+      inset: auto 22px 22px 22px;
+      min-height: 82px;
+      display: grid;
+      place-items: center;
+      color: rgba(39,48,46,.62);
+      border: 1px dashed rgba(39,48,46,.25);
+      border-radius: 20px;
+      background: rgba(255,255,255,.45);
+      backdrop-filter: blur(8px);
+      font-size: 14px;
+    }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 8px 25px rgba(53,61,57,.04);
+    }
+    .section-head { display: flex; justify-content: space-between; gap: 32px; align-items: end; margin-bottom: 38px; }
+    .section-head p { max-width: 520px; color: var(--muted); }
+    .about-list { display: grid; gap: 16px; margin-top: 26px; }
+    .about-item { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+    .about-item strong { font-size: 14px; color: var(--muted); font-weight: 500; }
+
+    .topics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .topic { min-height: 190px; display: flex; flex-direction: column; justify-content: space-between; }
+    .topic span { color: var(--muted); font-size: 14px; }
+
+    .pricing { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .price-card { padding: 32px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); }
+    .price { font-size: 44px; letter-spacing: -0.04em; margin: 14px 0 8px; font-weight: 650; }
+    .price-card ul { padding-left: 20px; color: var(--muted); }
+    .price-card.featured { background: var(--accent); color: white; border-color: var(--accent); }
+    .price-card.featured p, .price-card.featured ul { color: rgba(255,255,255,.78); }
+    .price-card.featured .btn { background: white; color: var(--text); }
+
+    .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .review p { color: var(--muted); margin-top: 18px; }
+    .review .name { margin-top: 24px; font-weight: 600; color: var(--text); }
+
+    details { border-top: 1px solid var(--line); padding: 20px 0; }
+    details:last-child { border-bottom: 1px solid var(--line); }
+    summary { cursor: pointer; list-style: none; font-weight: 600; padding-right: 30px; position: relative; }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content: "+"; position: absolute; right: 0; top: -2px; font-size: 24px; color: var(--muted); }
+    details[open] summary::after { content: "–"; }
+    details p { color: var(--muted); max-width: 820px; margin-top: 12px; }
+
+    .contact-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 24px; align-items: stretch; }
+    .contact-panel { background: var(--accent); color: white; border-radius: var(--radius); padding: 34px; }
+    .contact-panel p { color: rgba(255,255,255,.78); margin-top: 16px; }
+    .contacts { margin-top: 28px; display: grid; gap: 12px; }
+    .contacts a { color: white; text-decoration: none; }
+
+    form { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; }
+    .field { display: grid; gap: 8px; margin-bottom: 16px; }
+    label { font-size: 14px; color: var(--muted); }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: #fff;
+      padding: 14px 15px;
+      outline: none;
+      color: var(--text);
+    }
+    input:focus, textarea:focus { border-color: #9bacA4; box-shadow: 0 0 0 4px rgba(100,122,112,.1); }
+    textarea { min-height: 130px; resize: vertical; }
+    .consent { font-size: 12px; color: var(--muted); margin-top: 12px; }
+    .form-status { margin-top: 12px; font-size: 14px; min-height: 22px; }
+
+    .map {
+      margin-top: 24px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      min-height: 340px;
+      background: var(--surface-2);
+    }
+    .map iframe { width: 100%; height: 340px; border: 0; display: block; }
+
+    footer { padding: 34px 0 52px; color: var(--muted); font-size: 14px; }
+    .footer-row { display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); padding-top: 24px; }
+
+    .mobile-cta { display:none; }
+
+    @media (max-width: 920px) {
+      .nav-links { display: none; }
+      .hero-grid, .grid-2, .contact-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 26px; }
+      .portrait { min-height: 460px; }
+      .topics, .reviews { grid-template-columns: 1fr 1fr; }
+      .section { padding: 72px 0; }
+      .section-head { align-items: start; flex-direction: column; }
+    }
+
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 24px, var(--max)); }
+      .header .btn { display:none; }
+      .hero-grid { gap: 26px; }
+      .hero-copy p { font-size: 17px; }
+      .portrait { min-height: 380px; border-radius: 28px; }
+      .topics, .reviews, .pricing { grid-template-columns: 1fr; }
+      .card, .price-card, form, .contact-panel { padding: 22px; }
+      .about-item { grid-template-columns: 1fr; gap: 4px; }
+      .section { padding: 58px 0; }
+      .footer-row { flex-direction: column; }
+      .mobile-cta {
+        display: flex;
+        position: fixed;
+        z-index: 40;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        min-height: 52px;
+        border-radius: 999px;
+        align-items:center;
+        justify-content:center;
+        background: var(--accent);
+        color: #fff;
+        text-decoration:none;
+        font-weight:600;
+        box-shadow: 0 10px 30px rgba(39,48,46,.25);
+      }
+      body { padding-bottom: 76px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="wrap nav">
+      <a class="brand" href="#top">Анна Морозова</a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a href="#about">Обо мне</a>
+        <a href="#topics">С чем работаю</a>
+        <a href="#price">Стоимость</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary" href="#contact">Записаться</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Психолог • Ярославль • очно и онлайн</span>
+          <h1>Помогаю вернуть опору, ясность и спокойствие</h1>
+          <p>Индивидуальная психологическая помощь взрослым. Бережно работаю с тревогой, самооценкой, отношениями, эмоциональным выгоранием и жизненными кризисами.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Записаться на консультацию</a>
+            <a class="btn btn-secondary" href="#about">Узнать обо мне</a>
+          </div>
+          <div class="hero-meta">
+            <span>50 минут • от 3 500 ₽</span>
+            <span>Конфиденциально</span>
+            <span>Первая встреча — знакомство и запрос</span>
+          </div>
+        </div>
+        <div class="portrait" role="img" aria-label="Заглушка фотографии психолога"></div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Обо мне</span>
+            <h2 style="margin-top:16px">Психолог с бережным и понятным подходом</h2>
+          </div>
+          <p>Текст-заглушка: здесь можно коротко рассказать о подходе, принципах работы и о том, каким вы хотите видеть пространство консультации для клиента.</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Анна Морозова</h3>
+            <p style="color:var(--muted); margin-top:12px">Практикующий психолог, консультант</p>
+            <div class="about-list">
+              <div class="about-item"><strong>Образование</strong><span>ЯрГУ им. П. Г. Демидова, факультет психологии — заглушка</span></div>
+              <div class="about-item"><strong>Подготовка</strong><span>Дополнительное обучение в современном консультативном подходе — заглушка</span></div>
+              <div class="about-item"><strong>Опыт</strong><span>6+ лет частной практики — заглушка</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Как проходит работа</h3>
+            <p style="color:var(--muted); margin-top:14px">На первой встрече мы уточняем ваш запрос и договариваемся о комфортном формате. В процессе работы я помогаю замечать устойчивые сценарии, лучше понимать свои реакции и находить способы действовать по-новому.</p>
+            <p style="color:var(--muted); margin-top:16px">Я не даю универсальных советов и не оцениваю. Моя задача — создать безопасное пространство, где можно честно исследовать происходящее и двигаться к изменениям в своем темпе.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="topics">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">С какими запросами работаю</span>
+            <h2 style="margin-top:16px">Когда особенно может быть полезна консультация</h2>
+          </div>
+          <p>Ниже — примеры запросов. После получения реальных текстов этот блок легко адаптировать под специализацию и SEO.</p>
+        </div>
+        <div class="topics">
+          <article class="card topic"><h3>Тревога и напряжение</h3><span>Постоянные переживания, страх будущего, внутреннее напряжение.</span></article>
+          <article class="card topic"><h3>Самооценка</h3><span>Самокритика, неуверенность, чувство «со мной что-то не так».</span></article>
+          <article class="card topic"><h3>Отношения</h3><span>Сложности в паре, границы, конфликты, расставания.</span></article>
+          <article class="card topic"><h3>Выгорание</h3><span>Усталость, потеря мотивации, ощущение перегрузки.</span></article>
+          <article class="card topic"><h3>Кризисы и перемены</h3><span>Смена работы, переезд, важные решения, потеря привычных ориентиров.</span></article>
+          <article class="card topic"><h3>Контакт с собой</h3><span>Сложно понимать свои чувства, желания и принимать решения.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="price">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Формат и стоимость</span>
+            <h2 style="margin-top:16px">Выберите удобный формат</h2>
+          </div>
+          <p>Стоимость, адрес и условия — заглушки. Их можно заменить за несколько минут.</p>
+        </div>
+        <div class="pricing">
+          <article class="price-card featured">
+            <h3>Очно в Ярославле</h3>
+            <div class="price">3 500 ₽</div>
+            <p>Индивидуальная консультация, 50 минут.</p>
+            <ul>
+              <li>Уютный кабинет в центре города</li>
+              <li>Конфиденциально</li>
+              <li>По предварительной записи</li>
+            </ul>
+            <a class="btn" href="#contact">Записаться очно</a>
+          </article>
+          <article class="price-card">
+            <h3>Онлайн</h3>
+            <div class="price">3 000 ₽</div>
+            <p>Видеоконсультация, 50 минут.</p>
+            <ul>
+              <li>Подходит из любого города</li>
+              <li>Zoom / Telegram / другой сервис</li>
+              <li>Гибкое расписание</li>
+            </ul>
+            <a class="btn btn-secondary" href="#contact">Записаться онлайн</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Отзывы</span>
+            <h2 style="margin-top:16px">Что говорят клиенты</h2>
+          </div>
+          <p>Отзывы ниже демонстрационные. Перед публикацией лучше использовать только реальные отзывы с разрешения клиентов.</p>
+        </div>
+        <div class="reviews">
+          <article class="card review"><h3>«Стало гораздо спокойнее»</h3><p>После нескольких встреч я начала лучше понимать, что запускает тревогу, и научилась быстрее возвращаться в устойчивое состояние.</p><div class="name">Мария, 32 года</div></article>
+          <article class="card review"><h3>«Появилась ясность»</h3><p>Очень помогло разобрать сложную ситуацию в отношениях без давления и оценок. Стало легче говорить о своих границах.</p><div class="name">Елена, 28 лет</div></article>
+          <article class="card review"><h3>«Бережный подход»</h3><p>Для меня было важно, что можно двигаться в своем темпе. На встречах чувствую себя спокойно и безопасно.</p><div class="name">Алексей, 35 лет</div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">FAQ</span>
+            <h2 style="margin-top:16px">Частые вопросы</h2>
+          </div>
+        </div>
+        <details open><summary>Сколько консультаций обычно нужно?</summary><p>Это зависит от запроса. Иногда достаточно нескольких встреч для конкретной задачи, а иногда работа занимает несколько месяцев. Формат и частоту обсуждаем вместе.</p></details>
+        <details><summary>Можно ли прийти, если я не умею сформулировать запрос?</summary><p>Да. Необязательно заранее понимать причину своего состояния. На первой встрече можно спокойно разобраться, что сейчас беспокоит больше всего.</p></details>
+        <details><summary>Что происходит на первой встрече?</summary><p>Мы знакомимся, обсуждаем вашу ситуацию, ожидания и договариваемся о формате дальнейшей работы. Первая встреча уже является полноценной консультацией.</p></details>
+        <details><summary>Как отменить или перенести встречу?</summary><p>Условия переноса и отмены можно прописать здесь. Например: бесплатный перенос не позднее чем за 24 часа до консультации.</p></details>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Запись на консультацию</span>
+            <h2 style="margin-top:16px">Можно начать с короткого сообщения</h2>
+          </div>
+          <p>Оставьте имя и удобный способ связи. Это демонстрационная форма: ниже в коде указаны места, куда подставить реальный e-mail и Telegram.</p>
+        </div>
+        <div class="contact-grid">
+          <aside class="contact-panel">
+            <h3>Контакты</h3>
+            <p>Отвечаю в течение рабочего дня. Можно написать в Telegram или оставить заявку через форму.</p>
+            <div class="contacts">
+              <a href="tel:+79000000000">+7 900 000-00-00</a>
+              <a href="mailto:hello@example.ru">hello@example.ru</a>
+              <a href="https://t.me/example" target="_blank" rel="noopener">Telegram: @example</a>
+              <span>Ярославль, ул. Примерная, 10</span>
+            </div>
+          </aside>
+
+          <form id="leadForm" novalidate>
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" autocomplete="name" placeholder="Как к вам обращаться" required />
+            </div>
+            <div class="field">
+              <label for="contactField">Телефон или Telegram</label>
+              <input id="contactField" name="contact" placeholder="+7 ... или @username" required />
+            </div>
+            <div class="field">
+              <label for="message">Коротко о запросе</label>
+              <textarea id="message" name="message" placeholder="Можно в свободной форме"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Отправить заявку</button>
+            <div class="consent">Нажимая кнопку, вы соглашаетесь на обработку персональных данных. Перед публикацией добавьте ссылку на реальную политику конфиденциальности.</div>
+            <div class="form-status" id="formStatus" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <div class="map" aria-label="Карта Ярославля">
+          <iframe title="Карта Ярославля" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=39.84%2C57.60%2C39.93%2C57.65&layer=mapnik&marker=57.6261%2C39.8845"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span>© 2026 Анна Морозова • Психолог в Ярославле</span>
+      <span>Не является медицинской услугой • Данные на сайте демонстрационные</span>
+    </div>
+  </footer>
+
+  <a class="mobile-cta" href="#contact">Записаться</a>
+
+  <script>
+    // ЗАГЛУШКИ ДЛЯ ПОДКЛЮЧЕНИЯ ФОРМЫ:
+    // 1) замените CONTACT_EMAIL на реальный e-mail;
+    // 2) либо интегрируйте отправку в Telegram через серверную функцию / webhook.
+    const CONTACT_EMAIL = 'hello@example.ru';
+
+    const form = document.getElementById('leadForm');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const contact = document.getElementById('contactField').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !contact) {
+        status.textContent = 'Пожалуйста, заполните имя и способ связи.';
+        return;
+      }
+
+      const subject = encodeURIComponent('Новая заявка с сайта психолога');
+      const body = encodeURIComponent(`Имя: ${name}\nКонтакт: ${contact}\n\nЗапрос:\n${message || 'Не указан'}`);
+      status.textContent = 'Открываю почтовое приложение для отправки заявки…';
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
